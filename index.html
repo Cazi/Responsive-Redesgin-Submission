@@ -1,12 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.R. Submission</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
 </head>
+
 <body>
-    
+    <!-- Nav Bar -->
+    <!-- Navbar and icon -->
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navStyle">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <div>
+                    <a class="navbar-brand brown-img" href="#">
+                        <img class="brown-img" src="images/brownu-logo.png" alt="The Brown University logo."
+                            width="100px" height="auto" background-color="#664E4C">
+                    </a>
+                </div>
+                <!-- Toggler button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar buttons -->
+                <div class="collapse navbar-collapse me-3 navStyle" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-button" href="#about" color="#F9D4BB">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active nav-button" href="#Usability">Usability</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active nav-button" href="#Lo-fi Wireframes">Lo-fi Wireframes</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active nav-button" href="#hf-prototypes">Hi-fi Prototypes</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active nav-button" href="#Responsive Redesign">Responsive Redesign</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto">
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- About the Project -->
+        <h1>User Interfaces / User Experience Project 2</h1>
+        <h2>Responsive Redesign</h2>
+        <hr>
+        <div id="about">
+            <h3 class="mx-3"><u>About the project</u></h3>
+            <div class="flex-column mx-3">
+                <p>This project required me to choose a website to resdesign from the ground up with html and css.
+                    The website could be any one we wished, but it was better to avoid webpages with dedicated UI/UX
+                    teams like Instagram or Pintrest. I also had several criterion to consider when deciding how our
+                    redesign would improve the webpage, which were broadly grouped together as usability and
+                    Accessibility.</p>
+                <br>
+                <p>My design had to be more resposive than the original page, and had to function on desktop, tablet,
+                    and mobile screen sizes.</p>
+                <br>
+                <p>I then created three low fidelity wireframes in <i>Balsamiq</i>, and a visual style guide and three
+                    high
+                    fidelity prototypes in <i>Figma</i>.</p>
+                <br>
+                <p>After that, I was ready to create our redesign in html and css!</p>
+                <br>
+                <p>The website that I chose, crunchyroll.com, was a promising candidate for redesign.</p>
+                <br>
+                <br>
+            </div>
+            <div class="flex-column cr-figure" style="justify-content: center; align-content: center;">
+                <img src="images/Crunchyroll ss.png" alt="A screenshot of the old Crunchyroll website."
+                    class="cr-figure mx-3">
+                <caption><u>The original crunchyroll website.</u></caption>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- Identifying Usability Problems -->
+            <div id="Usability">
+                <h3 class="mx-3"><u>Usability and Accessibility</u></h3>
+                <ul>
+                    <li class="usability-li"><b>Usability</b></li>
+                    <ul>
+                        <li>On desktop, the interface is fairly simple to navigate, but the center of the page is packed
+                            with content which makes the overall experience cluttered.
+                        </li>
+                        <li>On mobile or tablet, you’re almost unable to use the website as it doesn’t at all scale for
+                            smaller screens.
+                        </li>
+                    </ul>
+                    <li class="usability-li"><b>Learnability</b></li>
+                    <ul>
+                        <li>The interface is simple to learn, as the buttons are mostly simple to discern. However,
+                            there are some
+                            issues with contrast that makes it difficult to see some elements of the page like the Login
+                            button.
+                        </li>
+                    </ul>
+                    <li class="usability-li"><b>Memorability</b></li>
+                    <ul>
+                        <li>The webpage isn’t at all memorable. It feels like a standard, albeit clunky interface, that
+                            isn’t
+                            inviting for users.</li>
+                    </ul>
+                    <li class="usability-li"><b>Accessibility</b></li>
+                    <ul>
+                        <li>I used WebAIM WAVE to detect possible accessibility problems.</li>
+                        <li>
+                            The crunchyroll interface has two main issues: <i>contrast</i> and <i>lack of aria tags</i>.
+                        </li>
+                        <li>For anyone using a screen reader, the page is essentially impossible to navigate because
+                            there are no aria attributes for the screen reader to follow.</li>
+                        <li>For people not using a screen reader, there are still many elements on the page that are
+                            difficult to see due to a lack of contrasting color. This needs to be fixed. </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Lo-fi Prototypes in Balsamiq -->
+            <div id="Lo-fi Wireframes">
+                <h3><u>Lo-fi Wireframes</u></h3>
+                <div class="flex-column">
+                    <h4>Desktop Redesign Wireframe</h4>
+                    <figure>
+                        <img class="wf-figure" src="images/CROLL Desktop.png"
+                            alt="The low fidelity wireframe of the redesign for a desktop window size.">
+                        <figcaption></figcaption>
+                    </figure>
+                    <h4>Tablet Redesign Wireframe</h4>
+                    <figure>
+                        <img class="wf-figure" src="images/CROLL Tablet.png"
+                            alt="The low fidelity wireframe of the redesign for a tablet window size.">
+                        <figcaption></figcaption>
+                    </figure>
+                    <h4>Mobile Redesign Wireframe</h4>
+                    <figure>
+                        <img class="wf-figure" src="images/CROLL Mobile.png"
+                            alt="The low fidelity wireframe of the redesign for a mobile phone window size.">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- Hi-fi Prototypes in Figma-->
+            <div id="hf-prototypes" class="align-items:center; text-align: center;">
+                <div class="flex-column">
+                    <h3><u>Visual Style Guide & Hi-fi Prototypes</u></h3>
+                    <h4>Visual Style Guide</h4>
+                    <figure style="border: black;">
+                        <img class="hf-prototypes" src="images/Visual Style Guide.png"
+                            alt="The high fidelity wireframe of the redesign for a desktop window size.">
+                        <figcaption style="margin-left: 200px;">The visual style guide, which describes the color
+                            palette of the webpage, and other elements.</figcaption>
+                    </figure>
+                    <h4>Desktop Redesign Prototype</h4>
+                    <figure style="border: black;">
+                        <img class="hf-prototypes" src="images/final 3.png"
+                            alt="The high fidelity wireframe of the redesign for a desktop window size.">
+                        <figcaption></figcaption>
+                    </figure>
+                    <h4>Tablet Redesign Prototype</h4>
+                    <figure>
+                        <img class="hf-prototypes" src="images/Final.png"
+                            alt="The high fidelity wireframe of the redesign for a tablet window size.">
+                        <figcaption></figcaption>
+                    </figure>
+                    <h4>Mobile Redesign Prototype</h4>
+                    <figure>
+                        <img class="hf-prototypes" src="images/final 2.png"
+                            alt="The high fidelity wireframe of the redesign for a mobile phone window size.">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- Final Responsive Redesign -->
+            <div id="Responsive Redesign">
+                <h3 class="mx-3" style="text-align:center"><u>Final Redesign</u></h3>
+                <p style="text-align:center">Here's the <a href="https://ambitioustortoise442.github.io/Responsive-Redesign/" target="_blank">link</a> to the final responsive redesign!</p>
+            </div>
+    </main>
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
